@@ -58,6 +58,9 @@ const Row = memo(
   )
 );
 
+const rows = [0, 1, 2, 3, 4, 5, 6];
+const numberOfRerendersByRowNumber = Array.from(rows, (_) => 0);
+
 export const TableEksempel = () => {
   const [selectedRows, setSelectedRows] = useState(new Set<number>());
   return (
@@ -114,6 +117,3 @@ const RowEksempel = memo(
     </tr>
   )
 );
-
-const rows = [0, 1, 2, 3, 4, 5, 6];
-const numberOfRerendersByRowNumber = Array.from(rows, (_) => 0);
